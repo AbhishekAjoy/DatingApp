@@ -1,0 +1,56 @@
+.navbar-container{
+    border-bottom: 1px solid #000000;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#app-title{
+    font-size: 1.4em;
+}
+.menu-items{
+    display: flex;
+    flex-grow: 0.5;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+
+  align-items: center;
+  background-image: linear-gradient(144deg,#f00cdd, #f03c87 50%,#e62121);
+  border: 0;
+  border-radius: 12px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  line-height: 0.4em;
+  max-width: 100%;
+  min-width: 70px;
+  padding: 14px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn:active,
+.btn:hover {
+  outline: 0;
+  background-image: linear-gradient(144deg,#9e1393, #b91e5f 50%,#c02525);
+}

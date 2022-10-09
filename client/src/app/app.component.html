@@ -1,8 +1,12 @@
-<h1>{{title}}</h1>
+<div class = "page">
+  <app-nav></app-nav>
+  <app-login></app-login>
+  <h2>Users</h2>
+  <ol>
+    <li *ngFor = "let user of users">
+      {{user.userName}}
+    </li>
+  </ol>
 
-<h3>Users</h3>
-<ol>
-  <li *ngFor = "let user of users">
-    {{user.userName}}
-  </li>
-</ol>
+</div>
+

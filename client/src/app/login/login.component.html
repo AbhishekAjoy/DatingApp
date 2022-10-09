@@ -1,0 +1,18 @@
+<div class="login-container">
+    <div class="title">Login</div>
+    <form #loginForm = "ngForm" class="example-form" (ngSubmit)="login()" autocomplete="off">
+        <mat-form-field appearance="outline">
+          <mat-label>Username</mat-label>
+          <input matInput name="username"
+          [(ngModel)] = "model.username">
+        </mat-form-field>
+      
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" name="password"
+            [(ngModel)] = "model.password">
+          </mat-form-field>
+
+          <button class = "btn" type="submit">Login</button>
+      </form>
+</div>
