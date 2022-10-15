@@ -1,11 +1,18 @@
 <div class = "navbar-container">
     <div class="nav-items">
         <a href="#Home" id = "app-title">Dating App</a>
-        <ul class = "menu-items">
+        <ul *ngIf = "this.accountService.currentUser$ | async" class = "menu-items">
             <li class = "item"><a href="#Matches">Matches</a></li>
             <li class = "item"><a href="#Lists">Lists</a></li>
             <li class = "item"><a href="#Messages">Messages</a></li>
         </ul>
-        <button class = "btn">Sign Up</button>
+
+        <mat-form-field *ngIf = "this.accountService.currentUser$ | async" appearance="outline">
+            <mat-label>Hi User</mat-label>
+            <mat-select>
+              <mat-option>Edit Profile</mat-option>
+              <mat-option (click) = "logout()">Log Out</mat-option>
+            </mat-select>
+          </mat-form-field>
     </div>
 </div>

@@ -1,11 +1,23 @@
 .navbar-container{
     border-bottom: 1px solid #000000;
+    padding: 4px;
 }
 
 .nav-items{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.item > a:hover{
+    color: #6A1B9A;
+    font-weight: 700;
+
+}
+
+.item > a:active{
+    color: #6A1B9A;
+    font-weight: 700;
 }
 
 #app-title{

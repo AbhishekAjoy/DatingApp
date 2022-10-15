@@ -1,12 +1,5 @@
 <div class = "page">
   <app-nav></app-nav>
-  <app-login></app-login>
-  <h2>Users</h2>
-  <ol>
-    <li *ngFor = "let user of users">
-      {{user.userName}}
-    </li>
-  </ol>
-
+  <app-login *ngIf = "(this.accountService.currentUser$ |async) === null"></app-login>
 </div>
 
