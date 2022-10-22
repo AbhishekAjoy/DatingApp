@@ -15,9 +15,9 @@
 
 }
 
-.item > a:active{
+.item > a:active, .active{
     color: #6A1B9A;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 #app-title{

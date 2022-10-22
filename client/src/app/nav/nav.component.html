@@ -1,14 +1,16 @@
 <div class = "navbar-container">
     <div class="nav-items">
-        <a href="#Home" id = "app-title">Dating App</a>
-        <ul *ngIf = "this.accountService.currentUser$ | async" class = "menu-items">
-            <li class = "item"><a href="#Matches">Matches</a></li>
-            <li class = "item"><a href="#Lists">Lists</a></li>
-            <li class = "item"><a href="#Messages">Messages</a></li>
+        <a routerLink="/" id = "app-title">Dating App</a>
+        <ul class = "menu-items">
+          <ng-container *ngIf = "this.accountService.currentUser$ | async" >
+            <li class = "item "><a routerLink="/members" routerLinkActive="active">Matches</a></li>
+            <li class = "item"><a routerLink="/lists" routerLinkActive="active">Lists</a></li>
+            <li class = "item"><a routerLink="/messages" routerLinkActive="active">Messages</a></li>
+          </ng-container>
         </ul>
 
-        <mat-form-field *ngIf = "this.accountService.currentUser$ | async" appearance="outline">
-            <mat-label>Hi User</mat-label>
+        <mat-form-field *ngIf = "(this.accountService.currentUser$ | async) as user" appearance="outline">
+            <mat-label>Hi {{user.username | titlecase}}</mat-label>
             <mat-select>
               <mat-option>Edit Profile</mat-option>
               <mat-option (click) = "logout()">Log Out</mat-option>

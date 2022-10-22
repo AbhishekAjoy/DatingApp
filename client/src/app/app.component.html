@@ -1,5 +1,6 @@
 <div class = "page">
   <app-nav></app-nav>
-  <app-login *ngIf = "(this.accountService.currentUser$ |async) === null"></app-login>
+  <router-outlet></router-outlet>
 </div>
+
 
