@@ -1,0 +1,27 @@
+h1{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.btn{
+    margin-top: 10px;
+    margin-left: 10px;
+    align-items: center;
+    background-image: linear-gradient(144deg,#f00cdd, #f03c87 50%,#e62121);
+    border: 0;
+    border-radius: 12px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    line-height: 0.4em;
+    max-width: 100%;
+    min-width: 70px;
+    margin-top: 1em;
+    padding: 20px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    white-space: nowrap;
+    cursor: pointer;
+  }

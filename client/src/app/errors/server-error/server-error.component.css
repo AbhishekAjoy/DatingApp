@@ -1,0 +1,18 @@
+.error-message{
+    color: red;
+    font-weight: bold;
+}
+
+.error{
+    padding: 10x;
+    margin:40px;
+    inline-size: min-content;
+    max-width: 80%;
+}
+p{
+    font-weight: bold;
+}
+code{
+    color: red;
+
+}

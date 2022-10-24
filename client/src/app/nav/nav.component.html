@@ -7,6 +7,7 @@
             <li class = "item"><a routerLink="/lists" routerLinkActive="active">Lists</a></li>
             <li class = "item"><a routerLink="/messages" routerLinkActive="active">Messages</a></li>
           </ng-container>
+          <li class = "item"><a routerLink="/errors" routerLinkActive="active">Errors</a></li>
         </ul>
 
         <mat-form-field *ngIf = "(this.accountService.currentUser$ | async) as user" appearance="outline">
